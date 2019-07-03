@@ -5,7 +5,7 @@ const screenshot = 'divar.png'
 try {
     (async () => {
         const browser = await puppeteer.launch({
-             headless: true , executablePath:'C:/Users/Sam/Downloads/Chromium 74.0.3695/chrome-win/chrome.exe'
+             headless: true
             })
         const page = await browser.newPage()
         await page.setViewport({ width: 1280, height: 800 })
